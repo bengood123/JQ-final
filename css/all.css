@@ -1,0 +1,274 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: "微軟正黑體";
+	font-weight: bolder;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+.topbar{
+    background-color: rgb(233, 232, 232);
+}
+.topbar ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.topbar li{
+    padding: 5px;
+}
+.topbar li a{
+    padding: 10px;
+}
+.topbar li a:hover{
+    color: red;
+}
+.topbar img{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.facebook{
+    border-right: 1px solid black;
+}
+/*首頁、產品介紹和聯絡我們-------------------------------------------*/
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+.header ul{
+	display: flex;
+}
+.header h1 a{
+	background-image: url(../images/logo.png);
+	width: 224px;
+	height: 50px;
+	display: block;
+	overflow: hidden;
+	text-indent: 101%;
+	white-space: nowrap;
+}
+.header li{
+	padding: 20px;
+}
+.header li a{
+	padding: 10px;
+}
+.header-menu-home a:hover,.header-menu-info a:hover{
+	border-bottom: 2px solid rgb(7, 134, 7);
+	color:red;
+}
+.header-menu ul{
+	display: none;
+}
+.header-menu > li:hover ul{
+	display: block;
+}
+.header-display{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	z-index: 10;
+	background-color: rgb(223, 223, 223);
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.header-display a{
+	padding: 5px;
+	color: black;
+	font-size: 18px;
+}
+.header-display a:hover{
+	color: red;
+}
+/*swiper 風格設定-----------------------------------------------------*/
+.swiper-container {
+    width: 1024px;
+	height: 346px;
+	position: relative;
+	--swiper-navigation-color: #ffffff;
+	--swiper-pagination-color: #ffffff;
+}  
+.swiper-wrapper p{
+	color: white;
+	position: absolute;
+	top: 133px;
+	right: 300px;
+	font-size: 36px;
+	text-align: center;
+}
+/* lightbox設計---------------------------------------------------------------*/
+.menu-lightbox-head{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.menu-lightbox li{
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+}
+.menu-lightbox h2{
+	font-size: 18px;
+	padding: 10px 0;
+}
+.menu-design h2{
+	padding: 50px 0 15px 0;
+}
+.menu-lightbox ul p{
+	text-align: justify;
+	line-height: 1.2;
+}
+.menu-html5,.menu-design,.menu-jquery{
+	width: 290px;
+	border: 1px solid #fafafa;
+	box-shadow: 1px 3px 10px #dbdbdb;
+	padding: 10px;
+}
+.menu-html5 img,.menu-design img,.menu-jquery img{
+	display: block;
+	margin: 0 auto;
+}
+.menu-jquery ul{
+	padding-left: 30px;
+}
+.menu-jquery li{
+	list-style: disc;
+	text-align: left;
+	padding: 0;
+}
+/* 表格設計----------------------------------------------------*/
+.content table{
+	margin: 20px auto;
+}
+.content h2{
+	text-align: center;
+	font-size: 24px;
+	padding: 25px 0 15px 0;
+}
+.content tr{
+	border-top: 1px solid rgb(189, 186, 186);
+}
+.content  th,td{
+	padding: 10px 60px ;
+}
+.content th{
+	text-align: left;
+	background-color: rgb(228, 228, 228);
+}
+.content td{
+	font-weight: normal;
+}
+.content-color {
+	color: #26ad88;
+}
+/* 留下聯絡資料表單設計--------------------------------------------------*/
+.footer{
+	background-image: url(../images/bg_03.png);
+}
+.footer h2{
+	text-align: center;
+	color: white;
+	font-size: 28px;
+	padding-top: 20px;
+}
+.footer-form{
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+}
+.footer-input{
+	display: flex;
+	flex-direction: column;
+}
+.footer input{
+	display: block;
+	margin-top: 10px;
+}
+.footer-name,.footer-phone,.footer-mail{
+	padding: 15px 0;
+	font-size: 18px;
+}
+.footer-btn {
+	background-color: #00cc99;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	width: 70px;
+	cursor: pointer;
+	margin-left: 250px;
+	font-weight: bolder;
+}
+.footer-btn:hover{
+	background-color: #003E3E;
+	outline: none;
+}
+.adress{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.adress span{
+	color: #e12d80;
+}
+/* TOP---------------------------------------------------------------*/
+.slide-bar{
+	text-align: center;
+	line-height: 60px;
+	position: fixed;
+	bottom:150px;
+	right: 20px;
+}
+.slide-bar a{
+	padding: 10px;
+	display: block;
+}
+.slide-bar a:hover{
+	color: red;
+}
+.slide-bar li{
+	background-color: rgb(189, 188, 188);
+	margin-top: 10px;
+}
